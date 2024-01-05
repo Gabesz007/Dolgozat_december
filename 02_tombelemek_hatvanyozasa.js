@@ -15,18 +15,14 @@
 
 function hatvanyoz(alapTomb, hatvanyKitevo){
     let hatvanyTomb = []
-    // const e = szamTomb[e]
     for (let e of alapTomb){
         if (typeof e !== "number"){
             return []
         }  
         let hatvany = Math.pow(e, hatvanyKitevo)
-        hatvanyTomb.push(hatvany) 
-        // console.log(hatvany)
-        
+        hatvanyTomb.push(hatvany)       
     }
     return hatvanyTomb
 }
-
 const hatvanyok = hatvanyoz([1, 4, 7, 2, "alma"], 3)
 console.log(hatvanyok)
